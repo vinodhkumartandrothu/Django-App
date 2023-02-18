@@ -169,26 +169,18 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1)
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'localhost'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_PORT = 2525
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 DEFAULT_FROM_EMAIL = 'vinodhdlegend@gmail.com'
 
 ADMINS = [
     ('vin', 'admin@domain.com')
 ]
 
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/1",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    }
-}
+
+#CELERY_BROKER_URL = 'redis://localhost:6379/2'
+
+
 
 LOGGING = {
     'version': 1,
@@ -216,3 +208,4 @@ LOGGING = {
         }
     }
 }
+

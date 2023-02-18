@@ -20,6 +20,8 @@ django-redis = "*"
 whitenoise = "*"
 gunicorn = "*"
 waitress = "*"
+dj-database-url = "*"
+celery = "*"
 
 [dev-packages]
 autopep8 = "*"
