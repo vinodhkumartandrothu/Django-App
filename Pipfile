@@ -21,7 +21,6 @@ whitenoise = "*"
 gunicorn = "*"
 waitress = "*"
 dj-database-url = "*"
-celery = "*"
 django-silk = "*"
 
 [dev-packages]
@@ -32,6 +31,7 @@ pytest-watch = "*"
 model-bakery = "*"
 locust = "*"
 django-silk = "*"
+psycpog2 = "*"
 
 [requires]
 python_version = "*"
