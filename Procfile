@@ -1,5 +1,4 @@
 release: python manage.py migrate
-web: waitress-serve --port=$PORT profiles.wsgi:applicationclear
-
+web: waitress-serve --port=$PORT storefront.wsgi:application
 
 
